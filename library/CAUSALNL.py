@@ -1,3 +1,7 @@
+#############################################################################
+# Original paper: https://openreview.net/forum?id=d20KTY2VrNk (NIPS 21)
+# Official code: https://github.com/a5507203/IDLN
+#############################################################################
 from network import *
 
 import torch.optim as optim
