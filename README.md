@@ -35,10 +35,15 @@ We also provide pre-processed dataset at [dropbox]().
 
 Train the classifier model. 
 ```
-#Train CE model with symmetric 20% MNIST dataset.
 python train_classifier.py --dataset MNIST -- noise_type sym --noisy_ratio 0.2 --class_method no_stop --seed 0 --data_dir {your_data_directory}
 ```
-
+It will train the base classifier with CE (Cross Entropy) loss on the MNIST dataset with 'sym' (symmetric 20%) noise. 
+We also provide other noise types:
+* 'clean' : no noise
+* 'sym' : symmetric
+* 'asym' : asymmetric
+* 'idnx' : instance-dependent
+* 'idn' : Similarity related instance-dependent
 To save your time, We also provide the checkpoints of pre-trained classifiers at [dropbox]().
 
 ### Step 2. Compute prior from classifier model
