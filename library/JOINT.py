@@ -1,3 +1,8 @@
+#############################################################################
+# Original paper: Joint Optimization Framework for Learning with Noisy Labels (CVPR 18) https://openaccess.thecvf.com/content_cvpr_2018/papers/Tanaka_Joint_Optimization_Framework_CVPR_2018_paper.pdf
+# Official code: https://github.com/DaikiTanaka-UT/JointOptimization
+#############################################################################
+
 from network import *
 
 import torch.optim as optim
