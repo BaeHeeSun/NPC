@@ -1,3 +1,8 @@
+#############################################################################
+# Original paper: Combating Noisy Labels by Agreement: A Joint Training Method with Co-Regularization (CVPR 20) https://openaccess.thecvf.com/content_CVPR_2020/html/Wei_Combating_Noisy_Labels_by_Agreement_A_Joint_Training_Method_with_CVPR_2020_paper.html
+# Official code: https://github.com/hongxin001/JoCoR
+#############################################################################
+
 from network import *
 
 import torch.optim as optim
