@@ -1,3 +1,8 @@
+#############################################################################
+# Original paper: Error-Bounded Correction of Noisy Labels (ICML 20) # Original paper: Error-Bounded Correction of Noisy Labels (ICML 20) http://proceedings.mlr.press/v119/zheng20c/zheng20c.pdf
+# Official code: https://github.com/pingqingsheng/LRT
+#############################################################################
+
 from network import *
 
 import torch.optim as optim
