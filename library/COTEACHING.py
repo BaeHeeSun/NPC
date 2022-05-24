@@ -1,3 +1,7 @@
+#############################################################################
+# Original paper: Co-teaching: Robust Training of Deep Neural Networks with Extremely Noisy Labels (NIPS 18) https://proceedings.neurips.cc/paper/2018/file/a19744e268754fb0148b017647355b7b-Paper.pdf
+# Official code: https://github.com/bhanML/Co-teaching
+#############################################################################
 from network import *
 
 import torch.optim as optim
