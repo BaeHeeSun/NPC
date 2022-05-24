@@ -1,3 +1,7 @@
+#############################################################################
+# Original paper:Making Deep Neural Networks Robust to Label Noise: a Loss Correction Approach (CVPR 17) https://openaccess.thecvf.com/content_cvpr_2017/papers/Patrini_Making_Deep_Neural_CVPR_2017_paper.pdf
+# Official code: https://github.com/giorgiop/loss-correction
+#############################################################################
 from network import *
 
 import torch.optim as optim
