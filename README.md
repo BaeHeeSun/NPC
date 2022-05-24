@@ -9,7 +9,7 @@ JoonHo Jang,
 [Kyungwoo Song](https://mlai.uos.ac.kr/),
 and [Il-Chul Moon](https://aailab.kaist.ac.kr/xe2/members_professor/6749).
 
-## Installation
+## Setup
 
 Install required libraries.
 ```
