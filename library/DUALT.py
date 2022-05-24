@@ -1,3 +1,7 @@
+#############################################################################
+# Original paper: Dual T: Reducing Estimation Error for Transition Matrix in Label-noise Learning (NIPS 20) https://proceedings.neurips.cc/paper/2020/file/512c5cad6c37edb98ae91c8a76c3a291-Paper.pdf
+# Official code: https://github.com/a5507203/Dual-T
+#############################################################################
 from network import *
 
 import torch.optim as optim
