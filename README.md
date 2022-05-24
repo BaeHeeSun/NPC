@@ -18,3 +18,27 @@ pip install -r requirements.txt
 Download datasets in `/data`.
 
 Pretrained models are available at [google drive]().
+
+## Train models
+
+Logs will be saved in `logs/{dataset}_{model}_{arch}_b{method}` directory.
+
+### Step 1. Train classifier model 
+
+Train 
+```
+python xxxx.py
+```
+
+### Step 2. Compute prior from classifier model
+Pre-compute prior information from classifier model
+```
+python xxxx.py
+```
+
+### Step 3. Train NPC to calibrate the prediction of pre-trained classifier
+Train contextual debiased model with object-aware random crop.
+```
+python xxxx.py
+```
+
