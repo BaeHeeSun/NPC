@@ -17,19 +17,29 @@ pip install -r requirements.txt
 ```
 Download datasets in `/data`.
 
-Pretrained models are available at [google drive]().
+Pretrained models are available at [dropbox]().
 
 ## Train models
 
 Logs will be saved in `logs/{dataset}_{model}_{arch}_b{method}` directory.
 
+### Step 0. Noisy Data Generation
+
+Generate synthetic noisy dataset.
+```
+python generate_noisy_data.py
+```
+We also provide pre-processed dataset at [dropbox]().
+
 ### Step 1. Train classifier model 
 
-Train 
-(We provide additional codes for our baseline models, which were taken from the author's code or reproduced directly. So the reproduced performance may be slightly different from the reported performance of each method.)
+Train the classifier model. 
 ```
-python xxxx.py
+#Train CE model with symmetric 20% MNIST dataset.
+python train_classifier.py --dataset MNIST -- noise_type sym --noisy_ratio 0.2 --class_method no_stop --seed 0 --data_dir {your_data_directory}
 ```
+
+To save your time, We also provide the checkpoints of pre-trained classifiers at [dropbox]().
 
 ### Step 2. Compute prior from classifier model
 Pre-compute prior information from classifier model
@@ -86,45 +96,4 @@ python xxxx.py
 
 
 
-========================================================================
-Step1. Noisy Data Generation
 
-* generate_noisy_data.py : generate synthetic noisy dataset
-- If you run generate_noisy_data.py, you will get synthetic noisy labeled dataset.
-- To save your time, we supply you with data.tar.gz at dropbox
-
-========================================================================
-Step2. Train a classifier
-- To save your time, we supply you with classifier_model.tar.gz at dropbox
-
-* train_classifier.py : train a classifier
- - Ex. Train CE model with symmetric 20% MNIST dataset,
-: python3 train_classifier.py --dataset MNIST -- noise_type sym --noisy_ratio 0.2 --class_method no_stop --seed 0 --data_dir XXXXX
-
- - Note
-	- For noise type, clean is no noise, sym is symmetric(SN), asym is asymmetric(ASN), idnx is instance-dependent(IDN) and idn is Similarity Related Instance-dependent (SRIDN) noise.
-	- For class_method, refer to the code for the implemented model name (e.g. vanilla for Early Stopping)
-	- you have to fill data_dir argument with the directory you saved the data(pickle files we supplied should be located in the directory).
-
-========================================================================
-Step3. Calibrate with NPC
-
-* main_prior.py : KNN Prior
- - Ex. Train CE model with symmetric 20% MNIST dataset,
-: python3 main_prior.py --dataset MNIST --noise_type sym --noisy_ratio 0.2 --class_method no_stop --seed 0 --data_dir XXXXXXX
-
-* main_npc.py : NPC and other post-processing methods(RoG, KNN)
- - Ex. Train CE model with symmetric 20% MNIST dataset,
-: python3 main_npc.py --dataset MNIST --noise_type sym --noisy_ratio 0.2 --class_method no_stop --post_method npc --knn_mode onehot --prior_norm 5 --data_dir XXXXX
-
-========================================================================
-Etc. Post-processing version of other possible methods
-################## 없어도 괜찮을 거 같기도 하고...
-
-* main_post.py : post-processors of star version
- - Ex. Train CE model with symmetric 20% MNIST dataset,
-: python3 main_npc.py --dataset MNIST --noise_type sym --noisy_ratio 0.2 --class_method no_stop --post_processor causalnl --data_dir XXXXX
-
-
-========================================================================
-* 파일 제목 대문자는 classifier model, 소문자는 post-processor
