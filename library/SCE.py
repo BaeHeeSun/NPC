@@ -1,3 +1,8 @@
+#############################################################################
+# Original paper: Symmetric Cross Entropy for Robust Learning with Noisy Labels (ICCV 19) https://openaccess.thecvf.com/content_ICCV_2019/papers/Wang_Symmetric_Cross_Entropy_for_Robust_Learning_With_Noisy_Labels_ICCV_2019_paper.pdf
+# Official code: https://github.com/YisenWang/symmetric_cross_entropy_for_noisy_labels
+#############################################################################
+
 from network import *
 
 import torch.optim as optim
