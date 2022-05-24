@@ -1,5 +1,5 @@
 #############################################################################
-# Original paper: https://openreview.net/forum?id=d20KTY2VrNk (NIPS 21)
+# Original paper: Instance-dependent Label-noise Learning under a Structural Causal Model(NIPS 21) https://openreview.net/forum?id=d20KTY2VrNk
 # Official code: https://github.com/a5507203/IDLN
 #############################################################################
 from network import *
