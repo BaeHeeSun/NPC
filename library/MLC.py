@@ -1,3 +1,8 @@
+#############################################################################
+# Original paper: Meta Label Correction for Noisy Label Learning (AAAI 21) https://arxiv.org/abs/1911.03809
+# Official code: https://github.com/microsoft/MLC
+#############################################################################
+
 from network import *
 
 import torch.optim as optim
