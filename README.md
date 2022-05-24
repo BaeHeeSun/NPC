@@ -37,7 +37,7 @@ Train the classifier model.
 ```
 python train_classifier.py --dataset MNIST -- noise_type sym --noisy_ratio 0.2 --class_method no_stop --seed 0 --data_dir {your_data_directory}
 ```
-It will train the base classifier with CE (Cross Entropy) loss on the MNIST dataset with `sym` (symmetric 20%) noise. 
+It will train the base classifier with `CE` (Cross Entropy) loss on the `MNIST` dataset with `sym` (symmetric 20%) noise. 
 
 We also provide other noise types:
 * `clean` : no noise
@@ -47,19 +47,25 @@ We also provide other noise types:
 * `idn` : Similarity related instance-dependent
 
 Please refer the code for the notation of each pre-training method. (e.g. `vanilla` for early-stopping)
+
+Generated dataset should be located in `your_data_directory`.
+
 To save your time, We also provide the checkpoints of pre-trained classifiers at [dropbox]().
 
-### Step 2. Compute prior from classifier model
-Pre-compute prior information from classifier model
+### Step 2. Compute KNN Prior
+Compute prior information from pre-trained classifier model.
 ```
-python xxxx.py
+python main_prior.py --dataset MNIST --noise_type sym --noisy_ratio 0.2 --class_method no_stop --seed 0 --data_dir {your_data_directory}
+```
+It will compute the prior information from the base classifier with `CE` (Cross Entropy) loss on the `MNIST` dataset with `sym` (symmetric 20%) noise. 
+
+### Step 3. Train NPC
+Train NPC to calibrate the prediction of pre-trained classifier.
+
+```
+python main_npc.py --dataset MNIST --noise_type sym --noisy_ratio 0.2 --class_method no_stop --post_method npc --knn_mode onehot --prior_norm 5 --data_dir {your_data_directory}
 ```
 
-### Step 3. Train NPC to calibrate the prediction of pre-trained classifier
-Train contextual debiased model with object-aware random crop.
-```
-python xxxx.py
-```
 
 
 
