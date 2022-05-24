@@ -15,8 +15,6 @@ Install required libraries.
 ```
 pip install -r requirements.txt
 ```
-Download datasets in `/data`.
-
 Pretrained models are available at [dropbox]().
 
 ## Train models
@@ -65,6 +63,7 @@ Train NPC to calibrate the prediction of pre-trained classifier.
 ```
 python main_npc.py --dataset MNIST --noise_type sym --noisy_ratio 0.2 --class_method no_stop --post_method npc --knn_mode onehot --prior_norm 5 --data_dir {your_data_directory}
 ```
+It will train NPC from the KNN prior and the corresponding base classifier with `CE` (Cross Entropy) loss on the `MNIST` dataset with `sym` (symmetric 20%) noise. 
 
 
 
