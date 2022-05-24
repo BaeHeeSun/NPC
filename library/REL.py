@@ -1,3 +1,8 @@
+#############################################################################
+# Original paper: Robust early-learning: Hindering the memorization of noisy labels (ICLR 21) https://openreview.net/forum?id=Eql5b1_hTE4
+# Official code: https://github.com/xiaoboxia/CDR
+#############################################################################
+
 from network import *
 
 import torch.optim as optim
