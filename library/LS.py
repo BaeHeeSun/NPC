@@ -1,3 +1,8 @@
+#############################################################################
+# Original paper: Does Label Smoothing Mitigate Label Noise? (ICML 20) http://proceedings.mlr.press/v119/lukasik20a/lukasik20a.pdf
+# Official code: -
+#############################################################################
+
 from network import *
 
 import torch.optim as optim
