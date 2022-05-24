@@ -26,6 +26,7 @@ Logs will be saved in `logs/{dataset}_{model}_{arch}_b{method}` directory.
 ### Step 1. Train classifier model 
 
 Train 
+(We provide additional codes for our baseline models, which were taken from the author's code or reproduced directly. So the reproduced performance may be slightly different from the reported performance of each method.)
 ```
 python xxxx.py
 ```
