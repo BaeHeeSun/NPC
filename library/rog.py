@@ -1,3 +1,8 @@
+#############################################################################
+# Original paper: Robust Inference via Generative Classifiers for Handling Noisy Labels (ICML 19) http://proceedings.mlr.press/v97/lee19f/lee19f.pdf
+# Official code: https://github.com/pokaxpoka/RoGNoisyLabel
+#############################################################################
+
 import torch.optim as optim
 import numpy as np
 import time
