@@ -1,3 +1,8 @@
+#############################################################################
+# Original paper: Learning Noise Transition Matrix from Only Noisy Labels via Total Variation Regularization (ICML 21) http://proceedings.mlr.press/v139/zhang21n/zhang21n-supp.pdf
+# Official code: https://github.com/YivanZhang/lio
+#############################################################################
+
 from network import *
 
 import torch.optim as optim
