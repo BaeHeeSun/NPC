@@ -2,7 +2,7 @@
 
 Official PyTorch implementation of
 [**"From Noisy Prediction to True Label: Noisy Prediction Calibration via Generative Model"**](https://arxiv.org/abs/2205.00690) (ICML 2022) by
-HeeSun Bae*,
+[HeeSun Bae*](https://scholar.google.co.kr/citations?hl=ko&view_op=list_works&gmla=AJsN-F47spNJkOB5PqPd5qYdvduZMN7Jp9ppZsN5FPpfX71F4fdliD29eOlFOktmElm9o59IBMc3xwUuM0oDMmw9yH4lx66lCJ3tjBsiVNu6RpjVTO8e0t-Ul2d1AJpbhoUr3gyvs4Dp&user=D9U_ohsAAAAJ),
 [Seungjae Shin*](https://sites.google.com/view/seungjae-shin),
 [Byeonghu Na](https://wp03052.github.io/),
 JoonHo Jang,
