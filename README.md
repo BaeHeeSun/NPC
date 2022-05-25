@@ -24,6 +24,7 @@ NPC operates as a post-processing module to a black-box classifier, without furt
 ## Setup
 
 Install required libraries.
+
 We kindly suggest other researchers to run this code on `python >= 3.6` version.
 ```
 pip install -r requirements.txt
