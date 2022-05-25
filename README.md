@@ -15,7 +15,7 @@ Install required libraries.
 
 <p align="center">
   <img 
-    width="1000"
+    width="800"
     src="overview.png"
   >
 </p>
