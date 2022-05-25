@@ -5,9 +5,15 @@ Official PyTorch implementation of
 [HeeSun Bae*](https://sites.google.com/view/baeheesun),
 [Seungjae Shin*](https://sites.google.com/view/seungjae-shin),
 [Byeonghu Na](https://wp03052.github.io/),
-JoonHo Jang,
+[JoonHo Jang](https://scholar.google.com/citations?user=oYbKry4AAAAJ&hl=ko&oi=ao),
 [Kyungwoo Song](https://mlai.uos.ac.kr/),
 and [Il-Chul Moon](https://aailab.kaist.ac.kr/xe2/members_professor/6749).
+
+## Overview
+
+Install required libraries.
+
+<img align="center" src="assets/tiled.png" width="650">
 
 ## Setup
 
@@ -18,8 +24,6 @@ pip install -r requirements.txt
 Pretrained models are available at [dropbox]().
 
 ## Train models
-
-Logs will be saved in `logs/{dataset}_{model}_{arch}_b{method}` directory.
 
 ### Step 0. Noisy Data Generation
 
