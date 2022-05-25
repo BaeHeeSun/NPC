@@ -29,7 +29,7 @@ We kindly suggest other researchers to run this code on `python >= 3.6` version.
 ```
 pip install -r requirements.txt
 ```
-Pretrained models are available at [dropbox]().
+Pretrained models are available at [dropbox](https://www.dropbox.com/sh/a1rhu01lvehscs0/AABIqn-cdKNiKfLqY4G8zxqEa?dl=0).
 
 ## Train models
 
@@ -39,7 +39,7 @@ Generate synthetic noisy dataset.
 ```
 python generate_noisy_data.py
 ```
-We also provide pre-processed dataset at [dropbox]().
+We also provide pre-processed dataset at [dropbox](https://www.dropbox.com/sh/a1rhu01lvehscs0/AABIqn-cdKNiKfLqY4G8zxqEa?dl=0).
 
 ### Step 1. Train classifier model 
 
@@ -61,7 +61,7 @@ For the provided codes for baseline models, some were taken from the author's co
 
 Generated dataset should be located in `your_data_directory`.
 
-To save your time, We also provide the checkpoints of pre-trained classifiers at [dropbox]().
+To save your time, We also provide the checkpoints of pre-trained classifiers at [dropbox](https://www.dropbox.com/sh/a1rhu01lvehscs0/AABIqn-cdKNiKfLqY4G8zxqEa?dl=0).
 
 ### Step 2. Compute KNN Prior
 Compute prior information from pre-trained classifier model.
