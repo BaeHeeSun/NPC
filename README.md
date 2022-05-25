@@ -1,4 +1,4 @@
-# NPC (Noisy Prediction Calibration via Generative Model)
+# NPC (Noisy Prediction Calibration via Generative Model, ICML 2022)
 
 Official PyTorch implementation of
 [**"From Noisy Prediction to True Label: Noisy Prediction Calibration via Generative Model"**](https://arxiv.org/abs/2205.00690) (ICML 2022) by
