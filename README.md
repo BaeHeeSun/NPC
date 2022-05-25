@@ -13,7 +13,7 @@ and [Il-Chul Moon](https://aailab.kaist.ac.kr/xe2/members_professor/6749).
 
 Install required libraries.
 
-<img align="center" src="overview.png" width="600">
+<img align="center" src="overview.png" width="1000">
 
 ## Setup
 
