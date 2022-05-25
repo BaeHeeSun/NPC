@@ -11,7 +11,8 @@ and [Il-Chul Moon](https://aailab.kaist.ac.kr/xe2/members_professor/6749).
 
 ## Overview
 
-Install required libraries.
+Our method, NPC, calibrates the prediction from a imperfectly pre-trained classifier to a true label via utilizing a deep generative model. 
+NPC operates as a post-processing module to a black-box classifier, without further access into classifier parameters.
 
 <p align="center">
   <img 
