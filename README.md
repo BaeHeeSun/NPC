@@ -55,7 +55,6 @@ We also provide other noise types:
 * `idn` : Similarity related instance-dependent
 
 Please refer the code for the notation of each pre-training method. (e.g. `vanilla` for early-stopping). 
-
 For the provided codes for baseline models, some were taken from the author's code, others reproduced directly. Because of this, there may be slight differences from the reported performance of each method.
 
 Generated dataset should be located in `your_data_directory`.
