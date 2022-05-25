@@ -11,7 +11,8 @@ and [Il-Chul Moon](https://aailab.kaist.ac.kr/xe2/members_professor/6749).
 
 ## Overview
 
-Our method, NPC, calibrates the prediction from a imperfectly pre-trained classifier to a true label via utilizing a deep generative model. \ NPC operates as a post-processing module to a black-box classifier, without further access into classifier parameters.
+Our method, NPC, calibrates the prediction from a imperfectly pre-trained classifier to a true label via utilizing a deep generative model.  
+NPC operates as a post-processing module to a black-box classifier, without further access into classifier parameters.
 
 <p align="center">
   <img 
@@ -55,9 +56,7 @@ We also provide other noise types:
 
 Please refer the code for the notation of each pre-training method. (e.g. `vanilla` for early-stopping). 
 
-For the provided codes for baseline models, some were taken from the author's code, others reproduced directly. 
-
-Because of this, there may be slight differences from the reported performance of each method.
+For the provided codes for baseline models, some were taken from the author's code, others reproduced directly. Because of this, there may be slight differences from the reported performance of each method.
 
 Generated dataset should be located in `your_data_directory`.
 
